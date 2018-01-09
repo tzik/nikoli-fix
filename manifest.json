@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Fix Nikoli Flash",
+  "version": "0.0.0.0",
+
+  "permissions": [
+    "http://www.nikoli.com/"
+  ],
+  "content_scripts": [{
+    "matches": ["http://www.nikoli.com/*"],
+    "js": ["fix_link.js"]
+  }]
+}
